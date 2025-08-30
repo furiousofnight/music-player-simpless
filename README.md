@@ -21,7 +21,7 @@ Um reprodutor de música moderno e interativo, desenvolvido com **HTML, CSS, Jav
 ## 📂 Estrutura do Projeto
 
 ```bash
-music_player_project/
+music-player-simpless/
 ├── backend/
 │   └── music_player.py         # Lógica do player (sem pygame)
 ├── server.py                   # API principal com Flask
@@ -43,7 +43,7 @@ music_player_project/
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/music_player_project.git
+git clone https://github.com/seu-usuario/music-player-simpless.git
 cd music_player_project
 
 # Crie o ambiente virtual e ative
