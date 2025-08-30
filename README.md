@@ -2,7 +2,7 @@
 
 Um reprodutor de música moderno e interativo, desenvolvido com **HTML, CSS, JavaScript, Flask e Python**, ideal para praticar conceitos de frontend, backend e deploy com Docker no Fly.io.
 
----
+---🎯LINK PARA TESTE https://music-player-project.fly.dev/ 🎯
 
 ## 🚀 Funcionalidades
 
