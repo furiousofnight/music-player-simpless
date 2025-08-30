@@ -1,0 +1,21 @@
+app = "music-player-project"       # Nome do app no Fly.io
+primary_region = "gig"             # Região primária (ex: gig = GIG - Brasil)
+
+[build]
+# (Opcional) Configurações adicionais de build podem ser colocadas aqui
+
+[env]
+RENDER = "true"                    # Flag que desativa pygame no backend
+
+[http_service]
+internal_port = 8080              # Porta onde o Gunicorn escuta (conforme Dockerfile)
+force_https = true                # Redireciona HTTP para HTTPS automaticamente
+auto_start_machines = true        # Inicia instâncias sob demanda
+auto_stop_machines = "stop"       # Pausa instâncias inativas para economia
+min_machines_running = 0          # Zero instâncias em idle (100% on-demand)
+processes = ["app"]               # Nome do processo (default: app)
+
+[[vm]]
+memory = "1gb"                    # Memória da máquina virtual
+cpu_kind = "shared"               # CPU compartilhada (econômico)
+cpus = 1                          # Núcleo único (padrão para apps leves)
